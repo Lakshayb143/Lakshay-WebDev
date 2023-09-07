@@ -1,0 +1,16 @@
+
+body{
+    background-color:cornflowerblue;
+    font-variant: inherit;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+
+h1{
+    color: greenyellow;
+    font-size: 90px;
+    background-color: cornflowerblue;
+    display: inline;
+}
