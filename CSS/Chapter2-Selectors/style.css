@@ -1,0 +1,77 @@
+/* In this we will learn Selectors */
+/* Universal Selector */
+*{
+    /* color: black; */
+}
+/* Element Selectors */
+body{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+
+    color:cornflowerblue;
+    background-color:chartreuse;
+    text-align: center;
+}
+p>span{
+    color:darkorange;
+}
+article>p>span{
+    color:burlywood;
+    text-decoration: solid;
+}
+
+/* We can also do above by writing */
+article p span{
+    color:aquamarine;
+}
+
+
+/* Class Selectors */
+.myArticles{
+    color: blueviolet;
+    font-style: oblique;
+
+
+}
+
+/* ID Selectors */
+#article1{
+    color: blue;
+    /* background-color: yellow; */
+    text-decoration: underline;
+}
+
+/* Attribute Selectors */
+/* The element(s) on the page with a specified attribute */
+h1[class]{
+    color:rebeccapurple;
+    background-color: #fff;
+}
+span[id="anotherspan"]{
+    background-color:dimgray;
+}
+
+/* Pseudo-classes */
+.myArticles:hover{
+    color: red;
+}
+
+h1:hover{
+    background-color: white;
+}
+
+#article1:hover{
+    background-color: #fff;
+}
+
+/* Pseudo-elements */
+
+/* The element(s) on the page with a specified pseudo-element */
+p::first-line{
+    color:burlywood;
+}
+
+

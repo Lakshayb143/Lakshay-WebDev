@@ -1,0 +1,37 @@
+/* header{
+    width:100%;
+}
+
+
+h1{
+    border: 3px dashed darkblue;
+    width:50%;
+} */
+
+
+/* Relative Length Units */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+h1{
+    border: 4px dashed darkred;
+    width:50%;
+    font-size: 3rem;
+    padding : 0.5em;
+}
+main{
+    width:50%;
+    background-color: lightblue;
+    font-size: 2rem;
+    
+}
+
+p{
+    font-size:2rem;
+    width: 50ch;
+}

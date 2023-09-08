@@ -1,0 +1,50 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* .container{
+    border:2.0px solid red;
+    font-size:1.5rem;
+    margin:1em;
+    padding:2em;
+   
+} */
+
+/* Let's experiment with margin and padding */
+.container{
+    border : 2px solid red;
+    font-size:1.5rem;
+    margin:2rem 1.5rem 4rem 3rem ; /* top right bottom left*/
+    /* margin: 2rem 4rem; 2rem for top and bottom & 4rem for right and left */
+    /* margin-top: 2rem;
+    margin-right:1.5rem;
+    margin-bottom:4rem;
+    margin-left:3rem; */
+
+    /* Now we will do the same thing for padding */
+
+    /* padding: 4rem 2rem 4rem 2rem; */
+}
+
+/* Now Let's Understand border */
+.container{
+    /* border:8px dotted black;
+    border-top: 5px ridge cadetblue;
+    border-top-right-radius: 5px;
+    border-right: 10px double greenyellow;
+    border-bottom-color: palegoldenrod;
+    border-bottom-style: groove; */
+    border: 10px groove red;
+    margin:1.5rem;
+    padding:2rem;
+    /* Here is another interesting thing but it is not calculated */
+    outline:5px solid darkmagenta;
+    outline-offset: -20px;
+
+
+
+
+}

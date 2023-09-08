@@ -1,0 +1,21 @@
+body{
+    font-size:28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.0;
+    background-color: peachpuff;
+    color:darkred;
+}
+
+h1{
+    color:#0000FF;
+    /* It has total 6 values. In Numberic it has value from 0 to 9
+    In Hexadecimal it is A to F and in alphabetical order*/
+
+}
+
+p{
+    color:rgba(0, 0, 0,0.5);
+    font-size: 21px;
+    color:#333;
+}
+

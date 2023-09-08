@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors in CSS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Selectors in CSS</h1>
+    <article id="article1">
+        <h2>Article 1</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Officiis dolores <span>odit maxime vitae!</span> Veritatis dolore cupiditate debitis 
+            dolorum ratione ipsam nulla sint, quae iusto unde!</p>
+    </article>
+
+    <article class="myArticles">
+        <h2>Article 2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Officiis dolores odit maxime vitae! Veritatis dolore cupiditate debitis 
+            dolorum ratione <span>ipsam nulla sint</span>, quae iusto unde!</p>
+    </article>
+
+    <article class="myArticles">
+        <h2>Article 3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Officiis <span>dolores odit maxime</span> vitae! Veritatis dolore cupiditate debitis 
+            dolorum ratione ipsam nulla sint, quae iusto unde!</p>
+    </article>
+
+    <p>This paragraph is not inside of a article tag .
+        <span>This is a independent paragraph </span>
+    </p>
+
+    <h1 class="Section2">Another Section of the page</h1>
+
+    <p>This paragraph is not inside of a article tag.
+        <span id="anotherspan">This is a independent paragraph </span>
+    </p>
+    
+</body>
+</html>
