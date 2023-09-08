@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+body{
+    padding:10%;
+    font-size:1.5rem;
+    font-family: 'Montserrat', sans-serif;
+
+}
+a{
+    /* color:crimson; */
+    color:hsl(240, 100%, 50%);
+    text-decoration: none;
+}
+
+a:visited{
+    color:blue;
+}
+
+a:hover , a:focus{
+    /* color:hsl(200, 61%, 47%); */
+    /* Another approach is */
+    opacity:0.6;
+    /* Also */
+    color:hsl(240, 100%, 50%,0.9);
+    background-color:lightgray;
+}
+
+a:active{
+    color:red;
+}

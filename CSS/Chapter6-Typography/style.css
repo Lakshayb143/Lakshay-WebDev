@@ -1,7 +1,9 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 body{
     padding:10%;
     font-size: 2rem;
+    font-family: cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
@@ -20,8 +22,18 @@ p{
 
 
 /* Some more properties */
+p{
+    line-height: 1.5;
+    /* letter-spacing: 0.05em;
+    word-spacing: 0.5em; */
+}
 
-
+/* Some Font Properties */
+p{
+    font-weight: 400;
+    /* font-style: italic; */
+    font-family: sans-serif;
+}
 
 
 
