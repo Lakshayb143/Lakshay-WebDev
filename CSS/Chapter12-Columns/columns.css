@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+} */
+
+body{
+    margin:0.5rem;
+    font-family: "Lato",sans-serif;
+    font-size:2rem;
+
+}
+
+.columns{
+    /* column-count: 4;
+    column-width: 250px; */
+    columns:4 250px;
+    column-rule: 3px dashed black;
+    column-gap: 3.5rem;
+}
+
+.columns>p{
+    margin-top: 0 ;
+}
+
+.columns>h2{
+    margin-top: 0;
+    background-color: black;
+    color:white;
+    padding:1rem; 
+    break-inside: avoid;
+    /* break-before: column; Not a good idea to use this property*/
+}
+
+.columns >.quote{
+    margin-top: 1.5rem;
+    font-size:3rem;
+    text-align:center;
+    color:#333;
+    column-span: all;
+}
+
+.nowrap{
+    white-space: nowrap;
+}

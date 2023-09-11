@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body{
+    font-family: "Lato",sans-serif;
+    font-size:2rem;
+}
+
+.block{
+    width: 50vw;
+    height: 30vw;
+    background-color: #333;
+    color:#fff;
+    padding:2rem;
+
+}
+
+.left{
+    float:left;
+    /* margin-left:2rem; */
+    margin-right:1.5rem;
+}
+
+/* As we can see, We need to provide some space between the div and para */
+/* So Let's try with margin in parar */
+
+/* p{
+    margin-left: 30px;
+ 
+} */
+
+/* As we can see there is no effect of margin-left because float is not inside the nornmal flow 
+so we can't apply margin to para*/
+
+.right{
+    float:right;
+    margin-left:1.5rem;
+}
+
+.clear{
+    clear:both;
+}
+
+section{
+    background-color: bisque;
+    border: 2px solid red;
+    padding:1rem;
+    /* overflow: auto; */
+    display:flow-root;  
+
+}
+/* 1 way to solve the container problem */
+/* overflow: auto -> This is in more legacy code again*/
+/* 2 way 
+    display:flow-root; */

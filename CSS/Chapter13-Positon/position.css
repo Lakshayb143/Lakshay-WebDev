@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Lato",sans-serif;
+    min-height: 200vh;
+    min-width: 150vw;
+    font-size:1.5rem;
+
+}
+
+.outerContainer{
+    border:4px dashed #333;
+    width:75vh;
+    height:85vh;
+    margin:40px auto;
+    position: relative;
+}
+
+.innerContainer{
+    border:4px solid darkblue;
+    width:40vh;
+    height:50vh;
+    margin:200px auto;
+   
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    padding:1rem;
+    /* border:2px solid red; */
+    color:white;
+}
+
+.absolute{
+    background-color: red;
+    /*position:static;*/ /* static is default value of all elements */
+    position:absolute;
+    top: 0px;
+    left:0px;
+    z-index: 1;
+
+   
+}
+/* position:absolute -> needs a relative parent and if it doesn't have a ancestor that is 
+                        positioned relative , then it takes the initial boundary. 
+                        It choses the ancestor closest to it.*/
+
+.relative{
+    background-color: rgb(235, 243, 0);
+    color:#333;
+    position:relative;      
+    top:00px;
+    left:00px;
+
+}
+
+/* position:relative -> It means it relative to its parent container already without having
+                        to define that relative on the parent.*/
+
+
+.fixed{
+    background-color: greenyellow;
+    position:fixed;
+    top:0;
+    left:0; 
+    /* top:93px;
+    left:50px; */
+
+}
+
+/* Note : Which box will be above other is decided by HTML. Which is defined first will be below the other if they coincide
+          But it is not possible every time to just change the structure . 
+          So we can use a CSS Property -> z-index:1 */
+
+.sticky{
+    background-color: blue;
+    position: sticky;
+    top:0;
+    
+}
