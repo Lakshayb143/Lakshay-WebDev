@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* Reset Start */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* This is removing the extra space below the image */
+img{
+    display: block;
+}
+
+/* Reset End */
+
+/* Utility Classes */
+.nowrap{
+    white-space: nowrap;
+    display: block;
+}
+
+.offscreen{
+    position: absolute;
+    left: -100000px;
+}
+
+/* Utility Classes End */
+
+body{
+
+    font-family: "Lato",sans-serif;
+    font-size:2rem;
+    min-height: 200vh;
+
+}
+
+.container{
+    background-color: lightgoldenrodyellow;
+    background-image: url("../Course_Images/map-2176x1451.png");
+    background-repeat:no-repeat;
+    background-size: cover;
+
+    background-position: bottom left;
+
+    
+    
+
+}
+
+.hero{
+    border-bottom: 2px solid black;
+    padding:20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+
+    background-color: hsla(0, 100%, 0%, 0.425);
+
+
+}
+
+.h1{
+    color:aliceblue;
+    text-shadow: 2px 2px 5px #000;
+
+    /* background-color: hsla(0, 0%, 20%, 0.39);
+    padding:0.25rem;
+    border-radius:15px; */
+
+}
+
+ 
+.profile-pic{
+    width:35%;
+}
+
+.profile-pic img{
+    /* margin: 2.5rem; */
+    width:100%;
+    height:auto;
+    min-width: 100px;
+    border: 20px double burlywood;
+    border-radius: 50%;
+}
+
+/* .example{
+    margin-top: 1.2rem;
+    padding-left: 20px;
+
+    border: 2.5px solid orangered;
+    border-radius: .4em ;
+}
+
+.example img{
+    width: 25%;
+    height: auto;
+
+} */
+

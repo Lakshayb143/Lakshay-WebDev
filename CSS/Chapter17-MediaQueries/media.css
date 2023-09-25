@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* 
+Media Queries allows you to modify your site based on specific characteristics
+and parameters.
+And most often we look at browser's viewport width.
+
+This is the key to responsive design.
+ */
+
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    /* font-family: "Lato",sans-serif; */
+    /* font-size:2rem; */
+
+    font: 1.5rem  "Lato",sans-serif;
+    min-height: 100vh;
+    background-color: #953287;
+    background-image:radial-gradient(whitesmoke,rgba(105, 102, 102, 0.845));
+    
+    display: flex;
+    flex-direction: column;
+}
+
+header,nav,main,footer{
+    display: grid;
+    place-content: center;
+    grid-template-columns: 100%;
+    text-align: center;
+}
+
+header,footer{
+    position:sticky;
+    background-color: #333;
+    color:whitesmoke;
+
+}
+
+
+header{
+    top:0;
+}
+nav{
+    background-color: whitesmoke;
+    color:#333;
+    
+}
+main{
+    flex-grow: 1;
+}
+footer{
+    bottom:0;
+}
+
+/* Syntax:Media Queries
+@media media type and (condition: breakpoint){
+    // CSS rules
+} */
+
+
+/* SMALL */
+
+@media screen and (min-width:576px){
+    body{
+        background-color: rgb(28, 193, 28);
+        background-image: radial-gradient(whitesmoke,rgba(110, 255, 110, 0.73));
+
+    }
+
+}
+
+/* Medium */
+@media screen and (min-width:750px){
+    body{
+        background-color: dodgerblue;
+        background-image: radial-gradient(whitesmoke,dodgerblue);
+
+    }
+
+}
+
+/* Large */
+@media screen and (min-width:900px){
+    body{
+        background-color: firebrick;
+        background-image: radial-gradient(whitesmoke,firebrick);
+
+    }
+
+}
+
+/* XL */
+@media screen and (min-width:1200px) {
+    body{
+        background-color: rebeccapurple;
+        background-image: radial-gradient(whitesmoke,rebeccapurple);
+
+    }
+
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height:425px) and (min-aspect-ratio:7/4){
+    body{
+        background-color: goldenrod;
+        background-image: radial-gradient(whitesmoke,goldenrod);
+
+    }
+    nav{
+        display: none;
+    }
+}

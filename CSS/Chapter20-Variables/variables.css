@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root{
+    /* Everything inherits from :root pseudo class
+        Even the html tag. */
+
+
+    
+    /* Variables for COLORS */
+    --BGCOLOR :rgb(114, 114, 114);
+    --ALT-BGCOLOR: darkblue;
+    --RADIAL-COLOR : whitesmoke;
+    --DARK-BG-COLOR : rgb(4, 2, 59);
+
+    /* Variables for FONT */
+    --FF : "Lato",sans-serif;
+    --FS : 2rem;
+    --FS-LARGE : 4rem;
+
+    /* SQUARES */
+    --SQUARE-BGCOLOR : papayawhip;
+    --SQUARE-SIZE : max(150px,20vw);
+    
+
+    /* GENERAL */
+    --PADDING : 1.5rem;
+    --BOX-SHADOW : 2px 2px 5px 2px rgba(247, 193, 77, 0.867);
+    --BORDER : 3px solid var(--DARK-BG-COLOR);
+
+}
+
+@media (prefers-color-scheme : dark){
+    :root{
+        --BGCOLOR : #333;
+        --ALT-BGCOLOR:#333 ;
+        --RADIAL-COLOR: whitesmoke;
+        --SQUARE-BGCOLOR: rgb(236, 225, 32);
+
+    }
+}
+
+body{
+    min-height: 100vh;
+    font : var(--FS) var(--FF);
+    display:flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items:center;  */
+
+}
+
+header,footer{
+    background-color: var(--ALT-BGCOLOR);
+    text-align: center;
+    color:white;
+    position:sticky;
+}
+
+header{
+    top:0;
+}
+
+footer{
+    bottom:0;
+}
+
+.navigation{
+    background-color: black;
+    color:whitesmoke;
+    /* border-bottom: 3px solid red; */
+    box-shadow: var(--BOX-SHADOW);
+}
+
+main{
+    flex-grow:1;
+    background: var(--BGCOLOR);
+    font-weight: bold;
+    background-image: radial-gradient(white,var(--BGCOLOR));
+
+    padding:10px 0;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-flow:row wrap;
+    gap : min(4vw , 15px);
+
+
+
+}
+
+.square--highlight{
+    --SQUARE-BGCOLOR : cornflowerblue;
+}
+
+.square{
+    background-color: var(--SQUARE-BGCOLOR);
+    width: var(--SQUARE-SIZE);
+    height : var(--SQUARE-SIZE);
+    border : var(--BORDER);
+    border-radius: 25px;
+
+    display:grid;
+    place-content: center;
+
+    font-size: var(--FS-LARGE);
+    box-shadow: var(--BOX-SHADOW);
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: "Lato",sans-serif;
+    font-size:2rem;
+    min-height:100vh;
+
+    background-color: #a0f6f9fe;
+    background-image: url('../Course_Images/bubbles.png'),
+                      linear-gradient(to left,navy,white);
+    /* background-blend-mode:overlay; */
+    background-repeat: repeat-y ,no-repeat;
+    background-position: right center;
+
+    background-size:20% , auto;
+
+
+}

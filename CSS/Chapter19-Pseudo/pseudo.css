@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+/* CSS RESET */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+/* UTILITY CLASSES */
+.nowrap{
+    white-space: nowrap;
+}
+
+
+/* GENERAL STYLES */
+html{scroll-behavior:smooth;}
+body{
+
+    font: 1.5rem  "Lato",sans-serif;
+    min-height: 100vh;
+    background-color: rgba(105, 102, 102, 0.845);
+    background-image:radial-gradient(whitesmoke,rgba(105, 102, 102, 0.845));
+    
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* :is(header,footer, .card){
+    position:sticky;
+    background-color: #333;
+    color:whitesmoke;
+    text-align:center;
+
+} */
+
+/* :where(header,footer, .card){
+    position:sticky;
+    background-color: #333;
+    color:whitesmoke;
+    text-align:center;
+
+} */
+
+header,footer{
+    position:sticky;
+    background-color: #333;
+    color:whitesmoke;
+    text-align:center;
+
+}
+/* The only difference between :is and :where -> that where doesn't have any specificity */
+
+header{
+    top:0;
+    /* color:red; */
+}
+nav{
+    background-color: whitesmoke;
+    border-bottom: 2px solid black;
+    padding:0.5rem;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+/* nav a , nav a:visited {
+    color:#333;
+} */
+
+/* Better option for above snippet */
+nav a:any-link{
+    color: #333;
+}
+
+/* D.R.Y -> Don't repeat yourself */
+nav :is( a:hover , a:focus){
+    color:azure;
+}
+
+nav a:active{
+    color: darkred;
+}
+
+main{
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    gap:1.5rem;
+    padding:1rem;
+}
+footer{
+    bottom:0;
+}
+
+/* PROFILE CARDS */
+.card{
+    scroll-margin-top: 8rem;
+    width:min(100%,350px);
+    background-color: #cbd5e1;
+    border: 4px solid black;
+    border-radius: 15px;
+    padding:1rem;
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+
+
+.card figure{
+    display: flex;
+    flex-flow:column nowrap;
+    align-items: center;
+}
+
+.card img{
+    border: 5px double #333;
+    border-radius:50%;
+}
+
+.card img:not([alt]){
+    border:10px double darkorange;
+}
+
+.card:target{
+    border:8px ridge rebeccapurple;
+}
+
+.card:nth-child(odd){
+    background-color: peachpuff;
+}
+
+/* .card:nth-child(even){
+    background-color: papayawhip;
+} */
+.card figcaption{
+    font-weight:bolder;
+    font-size:2rem;
+    margin:1rem;
+    text-align: center;
+
+}
+
+.card figcaption::after{
+    content:' ❤️';
+    display:block;
+}
+
+/* .card figcaption::before{
+    content:"✨";
+    display:block;
+} */
+
+.card p{
+    position:relative;
+}
+
+.card p::before{
+    content:open-quote;
+    font-size:3em;
+    position:absolute;
+    top:-0.25em;
+    left: -0.3em;
+
+}
+
+.card p::after{
+    content: close-quote;
+    font-size:3em;
+    position:absolute;
+    top: -0.25em;
+    right: -0.38em;
+
+}
+
+.card figcaption:first-letter{
+    font-size:3rem;
+    /* border : 4px solid black;
+    border-radius:50%; */
+
+}
+
+.card figcaption::first-line{
+    font-size:3rem;
+    text-decoration: underline;
+}
+/* Syntax:Media Queries
+@media media type and (condition: breakpoint){
+    // CSS rules
+} */
+
+
+/* SMALL */
+
+@media screen and (min-width:576px){
+    main{
+        justify-content: center;
+        flex-flow: row wrap;
+        padding:1rem;
+    }
+
+    .card{
+        width: min(100%,400px);
+    }
+
+}
+
+/* Medium */
+@media screen and (min-width:750px){
+    nav{
+        display:none;
+    }
+    .card{
+        width:min(100%,325px);
+    }
+    .card figure{
+        flex-flow: column-reverse;
+
+    }
+    .card figcaption{
+        margin:0.1em 0;
+    }
+    .card p{
+        margin-top:1rem;
+    }
+
+}
+
+/* Large */
+@media screen and (min-width:900px){
+    .card{
+        width:min(100%,400px);
+    }
+
+
+}
+
+/* XL */
+@media screen and (min-width:1200px) {
+    .card{
+        width:min(calc(33% - 1rem),500px);
+    }
+
+}
+
+/* MOBILE DEVICE LANDSCAPE */
+@media screen and (max-height:425px) and (min-aspect-ratio:7/4){
+    nav{
+        display:none;
+    }
+
+    h1{
+        font-size:1rem;
+    }
+    main{
+        flex-flow:row nowrap;
+        justify-content:space-evenly;
+        align-items:stretch;
+    }
+    .card{
+        width:min(calc(33% - .25rem),200px);
+    }
+    .card figcaption , .card p{
+        font-size: 1.25rem;
+    }
+}
