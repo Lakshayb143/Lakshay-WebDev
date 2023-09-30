@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    margin : 2rem;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+}
+
+
+h1{
+    display:inline;
+    font-weight: bold;
+    border : 3px double black;
+    border-radius: 1rem;
+    padding : 1rem
+}
+
+h1:hover{
+    background-color: #333;
+    color:whitesmoke;
+    border : 4.5px solid gray;
+    transition: all 0.32s linear;
+}

@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+
+body {
+    margin : 3rem;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+
+}
+
+main{
+    text-align: center;
+}
+
+h1{
+    display : inline;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    padding : 2rem;
+    white-space: nowrap;
+    border : 0.5rem double black;
+    border-radius: 5rem;
+
+}

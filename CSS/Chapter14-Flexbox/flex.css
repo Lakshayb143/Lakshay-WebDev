@@ -20,8 +20,6 @@ body{
     max-width: 800px;
     min-height: 400px;
     margin-inline:auto;
-    
-
  
 }
 
@@ -52,7 +50,7 @@ body{
 }
 .box{
     height: 100px;
-    /* min-width: 100px; */
+    min-width: 100px;
     background-color: black;
     color: whitesmoke;
     font-size: 2rem;
@@ -77,16 +75,21 @@ body{
 }
 
 .container{
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     
 }
 
 .box{
     flex-shrink:1;
 }
+.box:first-child{
+    background-color: red;
+    order : 5;
+}
 .box:nth-child(2){
     flex-shrink: 2;
-    order: 3;
+    background-color: yellow ;
+    order: 4;
 }
 
 /* flex: 1 1 250px
