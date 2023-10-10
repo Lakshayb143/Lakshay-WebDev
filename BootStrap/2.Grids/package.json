@@ -1,0 +1,17 @@
+{
+  "name": "grids_bootstrap",
+  "version": "5.3.2",
+  "description": "This we will be working with bootstrap girds system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Grids"
+  ],
+  "author": "Lakshay Bhatia",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.2"
+  }
+}

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Introducion to Bootstrap</title>
+        <link
+            rel="stylesheet"
+            href="../node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+
+        <style>
+            [class*="col"] {
+                padding: 1rem;
+                background-color: #33b5e5;
+                border: 2px solid black;
+                /* color: #000;
+                font-size: 2rem;
+                font-weight: bold; */
+            }
+
+            [class*="container"] {
+                border: 3px solid black;
+            }
+
+            .child{
+                background-color: gray;
+            }
+        </style>
+    </head>
+    <div>
+        <div class="container border">
+            Content
+            <div class="row border">
+                <div class="col-12 border">col 1</div>
+                <div class="col-4 border">col 2</div>
+                <div class="col-4 border">col 3</div>
+                <div class="col-4 border">col 4</div>
+            </div>
+            <!-- More better way -->
+            <div class="row border">
+                <div class="col-md-12 border">col 5</div>
+                <div class="col-md-4 border">col 6</div>
+                <div class="col-md-4 border">col 7</div>
+                <div class="col-md-4 border">col 8</div>
+            </div>
+            <!-- We can also mix sizes -->
+            <div class="row">
+                <div class="col-lg-6 col-md-4">col 5</div>
+                <div class="col-lg-6 col-md-4">col 6</div>
+                <div class="col-lg-6 col-md-4">col 7</div>
+                <div class="col-lg-6 col-md-4">col 8</div>
+            </div>
+        </div>
+
+        <div class="container border">
+            <div class="row">
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+                <div
+                    class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12"
+                >
+                    col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col-xs-12
+                </div>
+            </div>
+        </div>
+    <br><br>
+
+        <div class="container " style="border : 2px solid black"> 
+        <div class="row align-items-end" style="height: 500px; ">
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+            <div class="col">One of three columns</div>
+        </div>
+        </div>
+
+        <div class="container border">
+            <div class="row justify-content-center">
+                <div class="col-2">Columns 1</div>
+                <div class="col-2">Columns 2</div>
+            </div>
+        </div>
+
+
+        <h2 class="text-center my-5">Gutters</h2>
+        <div class="container border">
+            <div class="row gx-5 gy-1">
+                <div class="col-6">
+                    <div class="child">1</div>
+                </div>
+                <div class="col-6">
+                    <div class="child">2</div>
+                </div>
+                <div class="col-6">
+                    <div class="child">3</div>
+                </div>
+                <div class="col-6">
+                    <div class="child">4</div>
+                </div>
+                <div class="col-6">
+                    <div class="child">5</div>
+                </div>
+                <div class="col-6">
+                    <div class="child">6</div>
+                </div>
+            </div>
+        </div>
+        <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
