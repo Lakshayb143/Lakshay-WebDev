@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: "Lato",sans-serif;
+}
+
+
+img{
+    width: 300px;
+    height : 400px;
+    margin: 1rem;
+
+}
+
+.Image1{
+    float : left;
+    
+
+
+}
+
+.Image2{
+    float : left;
+    clear : left;
+    
+}
+

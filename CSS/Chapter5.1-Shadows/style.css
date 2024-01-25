@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.container {
+    background-color: burlywood;
+    height: 800px;
+    border: 5px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.box {
+    background-color: cadetblue;
+    height: 500px;
+    width: 500px;
+    border: 3px solid black;
+    margin: 1rem;
+    padding: 1rem;
+
+    /* Box Shadow */
+
+    /* box-shadow : -30px -20px  darkred; */
+    box-shadow: 10px 10px 10px darkgoldenrod , -10px -10px 10px darkgoldenrod; 
+    /* box-shadow: 10px 10px 5px 15px darkslateblue; */
+    /* inset - shadow will move inside the box */
+    /* box-shadow: inset 10px 10px 5px 15px darkslateblue; */
+}
+
+.MainHeading{
+    text-align:center;
+    padding: 1rem;
+    font-size : 3rem;
+    text-shadow: 2px 2px 1px rgb(124, 246, 226) , -2px -2px 1px rgb(124, 246, 226) ;
+}

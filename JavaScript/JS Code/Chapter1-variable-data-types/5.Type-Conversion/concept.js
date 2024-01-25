@@ -15,6 +15,7 @@ console.log(10 + NaN);
 console.log(undefined + undefined);
 console.log('str' / 3);
 
+let num = 0;
 console.log(num/num); // Indeterminate forms
 
 

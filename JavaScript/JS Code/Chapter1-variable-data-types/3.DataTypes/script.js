@@ -93,3 +93,5 @@ console.log(output , typeof output);
 const population = 939329329329329329329324324324324324324324329n;
 output = population ;
 console.log(output, typeof output)
+
+console.log(variable)

@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@500&family=Rubik&display=swap');
+                 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                
+                         
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+.navbar{
+    background-color: gainsboro;
+    color : #333;
+    margin : 1rem 0.1rem;
+    padding : 1rem;
+    
+}
+
+.nav-item{
+    margin : 2rem;
+    padding : 2rem 2rem 2rem 2rem;
+}
+
+a:any-link{
+    color : black;
+    text-decoration: none;
+
+}
+
+h2, h3{
+    margin : 0.5rem;
+    
+}

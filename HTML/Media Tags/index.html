@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Media Tags</title>
+    </head>
+    <body>
+        <img
+            src="javascript-logo.png"
+            alt="JavaScript Logo"
+            width="150px"
+            height="150px"
+            loading="lazy"
+        />
+
+        <!-- Adding audio to the page -->
+        <!-- method 1 -->
+        <audio src="Paisa.mp3" controls></audio>
+
+        <!-- method 2 -->
+        <audio controls>
+            <source src="Paisa.mp3" type="audio/mp3">
+        </audio>
+
+        <!-- Adding Videos -->
+        <video src="musicVideo.mp4" height="400px" poster="javascript-logo.png" disablepictureinpicture preload="metadata"   controls></video>
+        <!-- In some browsers (e.g. Chrome 70.0) autoplay doesn't work if no muted attribute is present. -->
+
+
+        <!-- Another way of adding videos -->
+        <video  controls height="400px" preload="metadata" controlslist="nodownload nofullscreen noremoteplayback noplaybackrate play  volume"  disablepictureinpicture >
+            <source src="musicVideo.mp4" type="video/mp4">
+        </video>
+
+
+
+
+
+
+
+
+    </body>
+</html>

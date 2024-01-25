@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: burlywood;
+    overflow: hidden;
+}
+
+.box {
+    background-color: brown;
+    height: 100px;
+    width: 400px;
+    border-radius: 25px;
+    /* margin: 20px; */
+    border: 5px solid lightskyblue;
+    position: relative;
+    animation-name: rightMovement;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    /* animation-delay: 2s; */
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* One more to learn */
+    /* animation-play-state */
+
+    /* Animation Shorthand */
+    /* animation : duration | timing-function | delay | iteration-count | direction | fill-mode | play-state | name */
+}
+
+.box2 {
+    background-color: brown;
+    height: 100px;
+    width: 400px;
+    border-radius: 25px;
+    margin: 20px;
+    border: 5px solid lightskyblue;
+    position: relative;
+    animation: 2s linear 0s infinite alternate none running leftMovement;
+}
+
+.circle {
+    background-color: blue;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    position: relative;
+    top: 20vh;
+    left: 500px;
+    animation: 5s ease-in-out 0s infinite alternate running circleMovement;
+}
+
+@keyframes rightMovement {
+    from {
+        top: 0;
+        left: 0;
+    }
+    to {
+        top: 0;
+        left: 1600px;
+    }
+}
+
+@keyframes leftMovement {
+    from {
+        top: 77vh;
+        left: 1600px;
+    }
+    to {
+        top: 77vh;
+        left: 0;
+    }
+}
+
+@keyframes circleMovement {
+    0% {
+        top: 2%;
+        left: 30px;
+    }
+    25% {
+        top: 50vh;
+        left: 1600px;
+    }
+    75% {
+        top: 2%;
+        left: 1600px;
+    }
+    100% {
+        top: 50vh;
+        left: 30px;
+    }
+}

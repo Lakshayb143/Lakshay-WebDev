@@ -104,7 +104,10 @@ div:last-child:hover{
     animation-iteration-count : 5;
     animation-direction : normal;
     animation-fill-mode : forwards; */
-    /* animation : 2s ease-in-out 1s 5 normal forwards slide; */
+    animation : 2s ease-in-out 1s 5 normal forwards slide;
+
+        /* One more to learn */
+    /* animation-play-state */
 }
 
 @keyframes slide {

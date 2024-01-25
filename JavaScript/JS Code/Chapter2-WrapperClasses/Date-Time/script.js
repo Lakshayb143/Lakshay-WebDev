@@ -6,7 +6,7 @@ console.log(today);
 console.log(typeof today);
 
 let tod = today.toString();
-console.log(today);
+console.log(today.toString());
 
 
 // Setting the custom date
