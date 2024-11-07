@@ -1,0 +1,15 @@
+{
+  "name": "2.servers",
+  "version": "1.0.0",
+  "description": "Just a random project",
+  "main": "routing.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon routing.js"
+  },
+  "author": "Lakshay",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
+}

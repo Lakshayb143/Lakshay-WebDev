@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-const url = 'https://api.github.com/users/QuincyLarson';
+
+const url = 'https://api.github.com/users/Lakshayb143';
 
 const FetchData = () => {
   const [isLoading, setIsLoading] = useState(true);

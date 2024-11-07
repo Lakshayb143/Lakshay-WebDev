@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<%- include('./partials/head.ejs') %>
+<html lang="en">
+  <body>
+    <!-- <%  %>  - THis is an ejs tag -->
+
+    <!-- <% const name = 'Site' %> -->
+
+    <%- include('./partials/nav.ejs') %>
+
+    <div class="blogs content">
+      <h2>All Blogs</h2>
+
+      <% if (blogs.length > 0) { %> <% blogs.forEach(element => { %>
+      <a href="/blogs/<%= element._id %>" class="single">
+        <h3 class="title"><%= element.title %></h3>
+        <p class="snippet"><%= element.snippet %></p>
+      </a>
+      <% }); %> <% } else { %>
+      <p>Create your first blog.</p>
+      <% } %>
+    </div>
+
+    <%- include('./partials/footer.ejs') %>
+  </body>
+</html>
